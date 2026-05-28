@@ -14,6 +14,13 @@ bld/
 [Ll]og/
 [Ll]ogs/
 
+bin/
+obj/
+.vs/
+
+bin/
+obj/
+.vs/
 
 # Visual Studio cache/options directory
 .vs/
