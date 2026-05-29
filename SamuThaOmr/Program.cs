@@ -8,6 +8,7 @@ class Program
 
         kat1.Miauw();
         kat1.Eet();
+        kat1.Slaap();
     }
 }
 
@@ -31,4 +32,8 @@ public class Kat
 {
     Console.WriteLine($"{Naam} is aan het eten.");
 }
+
+public void Slaap()
+{
+    Console.WriteLine($"{Naam} is aan het slapen.");
 }
