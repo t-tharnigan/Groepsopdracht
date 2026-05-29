@@ -7,6 +7,7 @@ class Program
         Kat kat1 = new Kat("Luna", 3);
 
         kat1.Miauw();
+        kat1.Eet();
     }
 }
 
