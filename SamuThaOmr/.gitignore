@@ -23,7 +23,11 @@ obj/
 .vs/
 
 # Visual Studio cache/options directory
+bin/
+obj/
 .vs/
+*.user
+*.suo
 
 
 # Visual Studio Code
@@ -39,8 +43,6 @@ obj/
 
 # User-specific files
 *.rsuser
-*.suo
-*.user
 *.userosscache
 *.sln.docstates
 
