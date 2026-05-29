@@ -37,3 +37,4 @@ public void Slaap()
 {
     Console.WriteLine($"{Naam} is aan het slapen.");
 }
+}
