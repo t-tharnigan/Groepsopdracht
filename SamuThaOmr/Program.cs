@@ -26,9 +26,7 @@ class CoolCat
     public void Meow()
     {
         MeowCount++;
-        string[] meows = { "Meow!", "Miauw!", "Purrrr...", "Meow meow meow!" };
-        Random random = new Random();
-        Console.WriteLine($"{Name} says: {meows[random.Next(meows.Length)]}");
+        Console.WriteLine($"{Name} says: Meow! 🐾");
     }
 
     public void DisplayInfo()
