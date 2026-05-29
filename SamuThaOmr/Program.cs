@@ -1,14 +1,27 @@
 ﻿using System;
+using System.Collections.Generic;
 
 class Program
 {
     static void Main()
     {
-        Kat kat1 = new Kat("Luna", 3);
+        List<Kat> katten = new List<Kat>()
+        {
+            new Kat("Luna", 3),
+            new Kat("Milo", 5),
+            new Kat("Simba", 2)
+        };
 
-        kat1.Miauw();
-        kat1.Eet();
-        kat1.Slaap();
+        foreach (Kat kat in katten)
+        {
+            Console.WriteLine($"Naam: {kat.Naam}, Leeftijd: {kat.Leeftijd}");
+
+            kat.Miauw();
+            kat.Eet();
+            kat.Slaap();
+
+            Console.WriteLine();
+        }
     }
 }
 
@@ -29,12 +42,12 @@ public class Kat
     }
 
     public void Eet()
-{
-    Console.WriteLine($"{Naam} is aan het eten.");
-}
+    {
+        Console.WriteLine($"{Naam} is aan het eten.");
+    }
 
-public void Slaap()
-{
-    Console.WriteLine($"{Naam} is aan het slapen.");
-}
+    public void Slaap()
+    {
+        Console.WriteLine($"{Naam} is aan het slapen.");
+    }
 }
