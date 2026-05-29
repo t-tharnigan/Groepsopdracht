@@ -1,0 +1,68 @@
+[1mdiff --git a/SamuThaOmr/Program.cs b/SamuThaOmr/Program.cs[m
+[1mindex ac3594d..8a1e8cd 100644[m
+[1m--- a/SamuThaOmr/Program.cs[m
+[1m+++ b/SamuThaOmr/Program.cs[m
+[36m@@ -1,53 +1,16 @@[m
+[31m-﻿using System;[m
+[31m-[m
+[31m-class Program[m
+[31m-{[m
+[31m-    static void Main()[m
+[31m-    {[m
+[31m-        CoolCat myCat = new CoolCat("Whiskers", "Orange");[m
+[31m-        myCat.Meow();[m
+[31m-        myCat.DisplayInfo();[m
+[31m-        myCat.ShowAsciiArt();[m
+[31m-    }[m
+[31m-}[m
+[31m-[m
+[31m-class CoolCat[m
+[32m+[m[32m﻿public class Kat[m
+ {[m
+[31m-    public string Name { get; set; }[m
+[31m-    public string Color { get; set; }[m
+[31m-    private int MeowCount = 0;[m
+[31m-[m
+[31m-    public CoolCat(string name, string color)[m
+[31m-    {[m
+[31m-        Name = name;[m
+[31m-        Color = color;[m
+[31m-    }[m
+[31m-[m
+[31m-    public void Meow()[m
+[31m-    {[m
+[31m-        MeowCount++;[m
+[31m-        string[] meows = { "Meow!", "Miauw!", "Purrrr...", "Meow meow meow!" };[m
+[31m-        Random random = new Random();[m
+[31m-        Console.WriteLine($"{Name} says: {meows[random.Next(meows.Length)]}");[m
+[31m-    }[m
+[32m+[m[32m    public string Naam { get; set; }[m
+[32m+[m[32m    public int Leeftijd { get; set; }[m
+ [m
+[31m-    public void DisplayInfo()[m
+[32m+[m[32m    public Kat(string naam, int leeftijd)[m
+     {[m
+[31m-        Console.WriteLine($"\n🐱 Cat Info:");[m
+[31m-        Console.WriteLine($"   Name: {Name}");[m
+[31m-        Console.WriteLine($"   Color: {Color}");[m
+[31m-        Console.WriteLine($"   Meows so far: {MeowCount}");[m
+[32m+[m[32m        Naam = naam;[m
+[32m+[m[32m        Leeftijd = leeftijd;[m
+     }[m
+ [m
+[31m-    public void ShowAsciiArt()[m
+[32m+[m[32m    public void Miauw()[m
+     {[m
+[31m-        Console.WriteLine($"\n{Name} says:");[m
+[31m-        Console.WriteLine(@"[m
+[31m-   /\_/\[m
+[31m-  ( o.o )[m
+[31m-   > ^ <[m
+[31m-  /|   |\[m
+[31m- (_|   |_)[m
+[31m-        ");[m
+[32m+[m[32m        Console.WriteLine($"{Naam} zegt: Miauw!");[m
+     }[m
+[31m-}[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
