@@ -25,4 +25,9 @@ public class Kat
     {
         Console.WriteLine($"{Naam} zegt: Miauw!");
     }
+
+    public void Eet()
+{
+    Console.WriteLine($"{Naam} is aan het eten.");
+}
 }
